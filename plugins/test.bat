@@ -1,2 +1,2 @@
-rem Æô¶¯jar°ü java -jar *.jar ²Î¼ûmyeclipse 10 ÆÆ½â
+rem å¯åŠ¨jaråŒ… java -jar *.jar å‚è§myeclipse 10 ç ´è§£
 

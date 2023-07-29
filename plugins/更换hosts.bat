@@ -3,7 +3,7 @@ color 0a
 echo %date% %time%
 cd \
 cd C:\WINDOWS\system32\drivers\etc
-set/p option=ÇëÊäÈëÄãµÄÑ¡Ôñ:1±¾µØ£¬2²âÊÔ 3ÏßÉÏ
+set/p option=è¯·è¾“å…¥ä½ çš„é€‰æ‹©:1æœ¬åœ°ï¼Œ2æµ‹è¯• 3çº¿ä¸Š
 
 if "%option%"=="1" copy /y C:\WINDOWS\system32\drivers\etc\back\hosts_develop C:\WINDOWS\system32\drivers\etc\hosts
 if "%option%"=="2" copy /y C:\WINDOWS\system32\drivers\etc\back\hosts_123 C:\WINDOWS\system32\drivers\etc\hosts
