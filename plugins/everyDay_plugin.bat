@@ -1,18 +1,16 @@
 @echo off
-REM %date:~0,4%%date:~5,2%%date:~8,2% È¡µÃµ±Ç°Ê±¼ä ÄêÔÂÈÕ
-REM ÎÄ¼þÎ»ÖÃ·¢Éú¸Ä±äÊ±Ö»Ðè¸Ä filePath
+REM %date:~0,4%%date:~5,2%%date:~8,2% å–å¾—å½“å‰æ—¶é—´ å¹´æœˆæ—¥
+REM æ–‡ä»¶ä½ç½®å‘ç”Ÿæ”¹å˜æ—¶åªéœ€æ”¹ filePath
 REM set filePath=C:\Mark\work\
-rem echo µ±Ç°ÅÌ·û£º%~d0
-rem echo µ±Ç°ÅÌ·ûºÍÂ·¾¶£º%~dp0
-rem echo µ±Ç°Åú´¦ÀíÈ«Â·¾¶£º%~f0
-rem echo µ±Ç°ÅÌ·ûºÍÂ·¾¶µÄ¶ÌÎÄ¼þÃû¸ñÊ½£º%~sdp0
-rem echo µ±Ç°CMDÄ¬ÈÏÄ¿Â¼£º%cd%
+rem echo å½“å‰ç›˜ç¬¦ï¼š%~d0
+rem echo å½“å‰ç›˜ç¬¦å’Œè·¯å¾„ï¼š%~dp0
+rem echo å½“å‰æ‰¹å¤„ç†å…¨è·¯å¾„ï¼š%~f0
+rem echo å½“å‰ç›˜ç¬¦å’Œè·¯å¾„çš„çŸ­æ–‡ä»¶åæ ¼å¼ï¼š%~sdp0
+rem echo å½“å‰CMDé»˜è®¤ç›®å½•ï¼š%cd%
 set filePath=%cd:~0,-7%\work\
 set file=%filePath%%date:~0,4%-%date:~5,2%.txt
-cd \
-c:
-cd c:\Program Files\EmEditor\
-REM Òì²½µ÷ÓÃEmEditor.exe±à¼­Æ÷£¬´ò¿ªÐèÒª±à¼­µÄ¶à¸öÎÄ¼þ
+cd /d c:\Program Files\EmEditor\
+REM å¼‚æ­¥è°ƒç”¨EmEditor.exeç¼–è¾‘å™¨ï¼Œæ‰“å¼€éœ€è¦ç¼–è¾‘çš„å¤šä¸ªæ–‡ä»¶
 REM @start EmEditor.exe C:\WINDOWS\system32\drivers\etc\hosts
 REM @start EmEditor.exe D:\apache-tomcat-6.0.26\conf\server.xml
 @start EmEditor.exe %filePath%question.txt
@@ -23,7 +21,5 @@ REM @start EmEditor.exe D:\apache-tomcat-6.0.26\conf\server.xml
 REM @start iexplore.exe http://www.sohu.com/
 REM start c:\windows
 REM 
-REM ¹Ø±Õdos´°¿Ú
-
-REM pauseÃüÁî³ÌÐòµ½´ËÔÝÍ££¬·ÀÖ¹Åú´¦ÀíÍæºóÖ±½ÓÍË³ö  pause>nul
-
+REM å…³é—­dosçª—å£
+REM pauseå‘½ä»¤ç¨‹åºåˆ°æ­¤æš‚åœï¼Œé˜²æ­¢æ‰¹å¤„ç†çŽ©åŽç›´æŽ¥é€€å‡º  pause>nul
